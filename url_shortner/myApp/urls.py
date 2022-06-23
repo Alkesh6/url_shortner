@@ -8,5 +8,7 @@ from . import views
 # ]
 urlpatterns = [
     path('',views.homePage),
-    path('test',views.test)
+    path('test',views.test),
+    path('all-analytics',views.all_analytics),
+    path('<slug:short_url>',views.redirect_url)
 ]
